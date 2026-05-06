@@ -1,14 +1,35 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f9fafb;
+  --background: #fef6eb;
   --foreground: #111827;
-  --font-sans: Inter, Arial, Helvetica, sans-serif;
+  --font-sans: var(--font-nunito), Arial, Helvetica, sans-serif;
   --font-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-heading: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-nunito), Arial, Helvetica, sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+}
+
+h1,
+h2 {
+  font-family: var(--font-heading);
+}
+
+p,
+label,
+input,
+textarea,
+select {
+  font-family: var(--font-body);
+}
+
+button,
+[role="button"] {
+  font-family: var(--font-heading);
+  font-weight: 600;
 }
